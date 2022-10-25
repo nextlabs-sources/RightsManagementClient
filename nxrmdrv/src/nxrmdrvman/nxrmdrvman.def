@@ -1,0 +1,31 @@
+LIBRARY	NXRMDRVMAN
+
+EXPORTS
+
+	nxrmdrvmanCreateManager						@101 NONAME
+	nxrmdrvmanStart								@102 NONAME
+	nxrmdrvmanStop								@103 NONAME
+	nxrmdrvmanPostCheckObligationsResponse		@104 NONAME
+	nxrmdrvmanQueryProcessInfo					@105 NONAME
+	nxrmdrvmanIsRequestCancelled				@106 NONAME
+	nxrmdrvmanIsProcessAlive					@107 NONAME
+	nxrmdrvmanPostOfficeGetCustomUIResponse		@108 NONAME
+	nxrmdrvmanIncreasePolicySN					@109 NONAME
+	nxrmdrvmanPostSaveAsForecastResponse		@110 NONAME
+	nxrmdrvmanPostGetClassifyUIResponse			@111 NONAME
+	nxrmdrvmanPostBlockNotificationResponse		@112 NONAME
+	nxrmdrvmanPostCheckProtectMenuResponse		@113 NONAME
+	nxrmdrvmanPostGetCtxMenuRegExResponse		@114 NONAME
+	nxrmdrvmanPostUpdateCoreCtxResponse			@115 NONAME
+	nxrmdrvmanPostQueryCoreCtxResponse			@116 NONAME
+	nxrmdrvmanPostQueryServiceResponse			@117 NONAME
+	nxrmdrvmanPostUpdateDwmWindowResponse		@118 NONAME
+	nxrmdrvmanPostUpdateOverlayWindowResponse	@119 NONAME
+	nxrmdrvmanPostCheckProcessRightsResponse	@120 NONAME
+	nxrmdrvmanCloseManager						@199 NONAME
+
+	nxrmdrvmanEnableAntiTampering				@200 NONAME
+	nxrmdrvmanSetOverlayProtectedWindows		@201 NONAME
+	nxrmdrvmanSetOverlayBitmapStatus			@202 NONAME
+
+

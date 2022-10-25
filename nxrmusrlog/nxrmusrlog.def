@@ -1,0 +1,9 @@
+LIBRARY		"nxrmusrlog"
+
+EXPORTS
+	NxrmulInitialize
+	NxrmulWriteLogEntry 
+	NxrmulUninitalize
+	NxrmulGetLogEntryByField
+	NxrmulGetNumberOfLogEntries
+	NxrmulGetOneLogEntry

@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\shared">
+      <UniqueIdentifier>{d4de4011-209f-4bc5-ac85-21649499cd3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\web">
+      <UniqueIdentifier>{8ab40dd1-d7a1-4ca0-bd09-656407c1e925}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\web">
+      <UniqueIdentifier>{d915152c-9ca7-4e02-aaac-bbbf6d63920d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\inc\nudf\uniqueguard.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\svc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\args.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\exception.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\log.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\rwlock.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\pipe.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\user.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\session.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\sa.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\file.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\path.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\crypto.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\regex.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\string.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\time.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\encoding.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\cert.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\lrucache.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\stopwatch.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\convert.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\thread.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\listentry.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\bitsmap.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\registry.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\resutil.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\bitmap.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\shared\enginectl.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\shared\engineenv.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\shared\keydef.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\shared\logdef.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\shared\moddef.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\shared\rightsdef.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\shared\obdef.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\shared\obutil.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\nxlutil.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\shared\fltdef.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\host.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\shared\nxlfmt.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\pe.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\httputil.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\nxrmuihlp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\shared\officelayout.h">
+      <Filter>Header Files\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\knowndir.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\nxlutilex.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\ziputil.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\asyncpipe.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\secure.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\nxlfile.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\security.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\uri.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\http_client.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\web\conversions.hpp">
+      <Filter>Header Files\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\web\date_time.hpp">
+      <Filter>Header Files\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\web\json.hpp">
+      <Filter>Header Files\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\web\SafeInt3.hpp">
+      <Filter>Header Files\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nudf\web\error_category.hpp">
+      <Filter>Header Files\web</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nudf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="svc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rwlock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pipe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="session.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="user.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sa.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="path.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="encoding.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stopwatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="registry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="resutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bitmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxlutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="host.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="httputil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxrmuihlp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="knowndir.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxlutilex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ziputil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="asyncpipe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="secure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxlfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="security.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uri.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="http_client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="web\conversions.cpp">
+      <Filter>Source Files\web</Filter>
+    </ClCompile>
+    <ClCompile Include="web\date_time.cpp">
+      <Filter>Source Files\web</Filter>
+    </ClCompile>
+    <ClCompile Include="web\json.cpp">
+      <Filter>Source Files\web</Filter>
+    </ClCompile>
+    <ClCompile Include="web\json_parsing.cpp">
+      <Filter>Source Files\web</Filter>
+    </ClCompile>
+    <ClCompile Include="web\json_serialization.cpp">
+      <Filter>Source Files\web</Filter>
+    </ClCompile>
+    <ClCompile Include="web\error_category.cpp">
+      <Filter>Source Files\web</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

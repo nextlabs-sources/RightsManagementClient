@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Driver Files">
+      <UniqueIdentifier>{8E41214B-6785-4CFE-B992-037D68949A14}</UniqueIdentifier>
+      <Extensions>inf;inv;inx;mof;mc;</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Inf Include="nxrmflt.inf">
+      <Filter>Driver Files</Filter>
+    </Inf>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nxrmflt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxrmfltCbdq.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxrmfltcleanup.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxrmfltclose.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxrmfltcreate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxrmfltdirectorycontrol.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxrmfltnxlcachemgr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxrmfltqueryopen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxrmfltsetea.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxrmfltsetinformation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxrmfltsetsecurity.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxrmfltutils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxrmfltwrite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rbtree.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxrmfltqueryinformation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxrmfltcommunication.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxrmfltqueryea.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxrmfltexpire.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="nxrmflt.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="nxrmfltCbdq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxrmfltcleanup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxrmfltclose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxrmfltcreate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxrmfltdef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxrmfltdirectorycontrol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxrmfltnxlcachemgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxrmfltqueryinformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxrmfltqueryopen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxrmfltsetea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxrmfltsetinformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxrmfltsetsecurity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxrmfltutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxrmfltwrite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nxrmflt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxrmfltcommunication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxrmfltqueryea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxrmfltexpire.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

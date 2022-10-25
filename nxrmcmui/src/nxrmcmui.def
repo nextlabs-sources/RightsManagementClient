@@ -1,0 +1,19 @@
+
+LIBRARY nxrmcmui
+EXPORTS
+    RmuInitialize                   @1  NONAME
+    RmuDestroy                      @2  NONAME
+    RmuShowAllPropPages             @3  NONAME
+    RmuShowGeneralPropPage          @4  NONAME
+    RmuShowPermissionPropPage       @5  NONAME
+    RmuShowClassifyPropPage         @6  NONAME
+    RmuShowDetailsPropPage          @7  NONAME
+    RmuShowAllPropPagesSimple       @8  NONAME
+    RmuShowGeneralPropPageSimple    @9  NONAME
+    RmuShowClassifyPropPageSimple   @10 NONAME
+    RmuShowDetailsPropPageSimple    @11 NONAME
+    RmuFreeResource                 @12 NONAME
+    RmuShowClassifyDialog           @13 NONAME
+    RmuShowClassifyDialogEx         @14 NONAME
+    RmuShowClassifyDialog2          @15 NONAME
+    RmuShowClassifyDialogEx2        @16 NONAME

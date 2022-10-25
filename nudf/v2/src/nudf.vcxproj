@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B85C9FF7-F45E-4DC8-9415-FD1CCA2AA54E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>nudf</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\..\..\external\boost\boost_1_59_0\include;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\..\..\external\boost\boost_1_59_0\include;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\..\..\external\boost\boost_1_59_0\include;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\..\..\external\boost\boost_1_59_0\include;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;NUDF_EXPORTS;WIN32_LEAN_AND_MEAN;NX_STRUCTURED_EXCEPTION_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\inc</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Crypt32.lib;Bcrypt.lib;Winhttp.lib;Secur32.lib;Wtsapi32.lib;Mpr.lib;ws2_32.lib;Httpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)lib\$(Platform)\$(Configuration)" mkdir "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)lib\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;NUDF_EXPORTS;WIN32_LEAN_AND_MEAN;NX_STRUCTURED_EXCEPTION_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\inc</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Crypt32.lib;Bcrypt.lib;Winhttp.lib;Secur32.lib;Wtsapi32.lib;Mpr.lib;ws2_32.lib;Httpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)lib\$(Platform)\$(Configuration)" mkdir "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)lib\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NUDF_EXPORTS;WIN32_LEAN_AND_MEAN;NX_STRUCTURED_EXCEPTION_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\inc</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Crypt32.lib;Bcrypt.lib;Winhttp.lib;Secur32.lib;Wtsapi32.lib;Mpr.lib;ws2_32.lib;Httpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)lib\$(Platform)\$(Configuration)" mkdir "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)lib\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;NUDF_EXPORTS;WIN32_LEAN_AND_MEAN;NX_STRUCTURED_EXCEPTION_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\inc</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Crypt32.lib;Bcrypt.lib;Winhttp.lib;Secur32.lib;Wtsapi32.lib;Mpr.lib;ws2_32.lib;Httpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)lib\$(Platform)\$(Configuration)" mkdir "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)lib\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\inc\nudf\bits.hpp" />
+    <ClInclude Include="..\inc\nudf\conversion.hpp" />
+    <ClInclude Include="..\inc\nudf\crypto.hpp" />
+    <ClInclude Include="..\inc\nudf\debug.hpp" />
+    <ClInclude Include="..\inc\nudf\eh.hpp" />
+    <ClInclude Include="..\inc\nudf\filesys.hpp" />
+    <ClInclude Include="..\inc\nudf\handyutil.hpp" />
+    <ClInclude Include="..\inc\nudf\http_client.hpp" />
+    <ClInclude Include="..\inc\nudf\http_server.hpp" />
+    <ClInclude Include="..\inc\nudf\http_service.hpp" />
+    <ClInclude Include="..\inc\nudf\json.hpp" />
+    <ClInclude Include="..\inc\nudf\dbglog.hpp" />
+    <ClInclude Include="..\inc\nudf\security.hpp" />
+    <ClInclude Include="..\inc\nudf\service.hpp" />
+    <ClInclude Include="..\inc\nudf\string.hpp" />
+    <ClInclude Include="..\inc\nudf\time.hpp" />
+    <ClInclude Include="..\inc\nudf\uri.hpp" />
+    <ClInclude Include="..\inc\nudf\winutil.hpp" />
+    <ClInclude Include="..\inc\nudf\xml.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bits.cpp" />
+    <ClCompile Include="conversion.cpp" />
+    <ClCompile Include="crypto.cpp" />
+    <ClCompile Include="debug.cpp" />
+    <ClCompile Include="eh.cpp" />
+    <ClCompile Include="filesys.cpp" />
+    <ClCompile Include="http_client.cpp" />
+    <ClCompile Include="http_server.cpp" />
+    <ClCompile Include="http_service.cpp" />
+    <ClCompile Include="json.cpp" />
+    <ClCompile Include="dbglog.cpp" />
+    <ClCompile Include="security.cpp" />
+    <ClCompile Include="service.cpp" />
+    <ClCompile Include="string.cpp" />
+    <ClCompile Include="time.cpp" />
+    <ClCompile Include="uri.cpp" />
+    <ClCompile Include="winutil.cpp" />
+    <ClCompile Include="xml.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

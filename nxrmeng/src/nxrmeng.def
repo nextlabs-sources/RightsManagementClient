@@ -1,0 +1,17 @@
+
+LIBRARY nxrmeng
+EXPORTS
+    RmEngineCreate              @1  NONAME
+    RmEngineDestroy             @2  NONAME
+    RmEngineStart               @3  NONAME
+    RmEngineStop                @4  NONAME
+    RmEnginePause               @5  NONAME
+    RmEngineContinue            @6  NONAME
+    RmEngineLogAccept           @7  NONAME
+    RmEngineLog                 @8  NONAME
+    RmOnSessionLogon            @9  NONAME
+    RmOnSessionLogoff           @10 NONAME
+    RmOnSessionConn             @11 NONAME
+    RmOnSessionDisconn          @12 NONAME
+    RmOnSessionRemoteConn       @13 NONAME
+    RmOnSessionRemoteDisconn    @14 NONAME

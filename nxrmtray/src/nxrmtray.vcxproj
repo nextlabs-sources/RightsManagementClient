@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\nxrmdrv\src\common\nxrmcorehlp.cpp" />
+    <ClCompile Include="clientipc.cpp" />
+    <ClCompile Include="EngineUtils.cpp" />
+    <ClCompile Include="main_popup.cpp" />
+    <ClCompile Include="nxrmtray.cpp" />
+    <ClCompile Include="rotateicon.cpp" />
+    <ClCompile Include="servctrl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="nxrmtray.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\inc\clientipc.hpp" />
+    <ClInclude Include="..\inc\main_popup.h" />
+    <ClInclude Include="..\inc\nxrmtray.h" />
+    <ClInclude Include="..\inc\rotateicon.h" />
+    <ClInclude Include="..\inc\servctrl.hpp" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="brand.bmp" />
+    <Image Include="icon_brand.ico" />
+    <Image Include="icon_close_hover.ico" />
+    <Image Include="icon_close_normal.ico" />
+    <Image Include="icon_no.ico" />
+    <Image Include="icon_off.ico" />
+    <Image Include="icon_on.ico" />
+    <Image Include="icon_policy.ico" />
+    <Image Include="icon_refresh.ico" />
+    <Image Include="icon_setting.ico" />
+    <Image Include="icon_yes.ico" />
+    <Image Include="nxrmui.ico" />
+    <Image Include="small.ico" />
+    <Image Include="state_ok.ico" />
+    <Image Include="state_warning.ico" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FB88A2B1-92D0-458F-A518-44DBF1B179A7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>nxrmtray</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>..\..\external\boost\boost_1_59_0\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>..\..\external\boost\boost_1_59_0\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>..\..\external\boost\boost_1_59_0\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>..\..\external\boost\boost_1_59_0\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_WIN32_WINNT=_WIN32_WINNT_WIN7;WINVER=_WIN32_WINNT_WIN7;NTDDI_VERSION=NTDDI_WIN7;_WIN32_IE=_WIN32_IE_IE100;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\inc;..\..\nudf\v1\inc;..\..\nxrmdrv\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AssemblerOutput>All</AssemblerOutput>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>nudf.lib;uxtheme.lib;comctl32.lib;Crypt32.lib;Bcrypt.lib;Secur32.lib;Credui.lib;Dwmapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)bin\$(Platform)\$(Configuration)" mkdir "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(Outdir)$(TargetName).pdb" "$(SolutionDir)bin\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\inc;..\..\common\inc</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRTDBG_MAP_ALLOC;WIN32;_DEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=_WIN32_WINNT_WIN7;WINVER=_WIN32_WINNT_WIN7;NTDDI_VERSION=NTDDI_WIN7;_WIN32_IE=_WIN32_IE_IE100;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\inc;..\..\nudf\v1\inc;..\..\nxrmdrv\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AssemblerOutput>All</AssemblerOutput>
+      <OmitFramePointers>false</OmitFramePointers>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>nudf.lib;uxtheme.lib;comctl32.lib;Crypt32.lib;Bcrypt.lib;Credui.lib;Dwmapi.lib;gdiplus.lib;Secur32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)bin\$(Platform)\$(Configuration)" mkdir "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(Outdir)$(TargetName).pdb" "$(SolutionDir)bin\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\inc;..\..\common\inc</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_WIN32_WINNT=_WIN32_WINNT_WIN7;WINVER=_WIN32_WINNT_WIN7;NTDDI_VERSION=NTDDI_WIN7;_WIN32_IE=_WIN32_IE_IE100;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\inc;..\..\nudf\v1\inc;..\..\nxrmdrv\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AssemblerOutput>All</AssemblerOutput>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>nudf.lib;uxtheme.lib;comctl32.lib;Crypt32.lib;Bcrypt.lib;Secur32.lib;Credui.lib;Dwmapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)bin\$(Platform)\$(Configuration)" mkdir "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(Outdir)$(TargetName).pdb" "$(SolutionDir)bin\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\inc;..\..\common\inc</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_WIN32_WINNT=_WIN32_WINNT_WIN7;WINVER=_WIN32_WINNT_WIN7;NTDDI_VERSION=NTDDI_WIN7;_WIN32_IE=_WIN32_IE_IE100;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\inc;..\..\nudf\v1\inc;..\..\nxrmdrv\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AssemblerOutput>All</AssemblerOutput>
+      <OmitFramePointers>false</OmitFramePointers>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>nudf.lib;uxtheme.lib;comctl32.lib;Crypt32.lib;Bcrypt.lib;Secur32.lib;Credui.lib;Dwmapi.lib;gdiplus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)bin\$(Platform)\$(Configuration)" mkdir "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(Outdir)$(TargetName).pdb" "$(SolutionDir)bin\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\inc;..\..\common\inc</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

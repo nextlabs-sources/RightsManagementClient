@@ -1,0 +1,11 @@
+
+LIBRARY nxrmesdk
+EXPORTS
+    RSEAlloc                        @1  NONAME
+    RSEAllocEx                      @2  NONAME
+    RSEFree                         @3  NONAME
+    RSECreate                       @4  NONAME
+    RSEDestroy                      @5  NONAME
+    RSEConfig                       @6  NONAME
+    RSEStart                        @7  NONAME
+    RSEStop                         @8  NONAME

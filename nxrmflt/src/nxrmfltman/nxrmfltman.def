@@ -1,0 +1,12 @@
+LIBRARY NXRMFLTMAN
+
+EXPORTS
+
+	nxrmfltCreateManager			@1 NONAME
+	nxrmfltReplyMessage				@2 NONAME
+	nxrmfltStopFiltering			@3 NONAME
+	nxrmfltStartFiltering			@4 NONAME
+	nxrmfltCloseManager				@5 NONAME
+	nxrmfltSetSaveAsForecast		@6 NONAME
+	nxrmfltSetPolicyChanged			@7 NONAME
+	nxrmfltUpdateKeyChain			@8 NONAME

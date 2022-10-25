@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{97D339B5-4CD4-43F5-B18C-A99908E32DBB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>nxrmcore</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>..\..\..\external\boost\boost_1_59_0\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <TargetName>$(ProjectName)64</TargetName>
+    <IncludePath>..\..\..\external\boost\boost_1_59_0\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>..\..\..\external\boost\boost_1_59_0\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <TargetName>$(ProjectName)64</TargetName>
+    <IncludePath>..\..\..\external\boost\boost_1_59_0\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;NXRMCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\inc;$(ProjectDir)\..\..\..\nudf\v1\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>nudfstatic.lib;Windowscodecs.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <BaseAddress>0x66000000</BaseAddress>
+      <DelayLoadDLLs>advapi32.dll</DelayLoadDLLs>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetFileName)" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).pdb" "$(SolutionDir)bin\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\..\common\inc</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;NXRMCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\inc;$(ProjectDir)\..\..\..\nudf\v1\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)$(TargetName)64$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)$(TargetName)64.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)$(TargetName)64.pdb</ProgramDatabaseFile>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)$(TargetName)64$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ManifestFile>$(IntDir)$(TargetName)$(TargetExt).intermediate.manifest</ManifestFile>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>nudfstatic.lib;Windowscodecs.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <BaseAddress>0x66000000</BaseAddress>
+      <DelayLoadDLLs>advapi32.dll</DelayLoadDLLs>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetFileName)" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).pdb" "$(SolutionDir)bin\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\..\common\inc</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NXRMCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\inc;$(ProjectDir)\..\..\..\nudf\v1\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>nudfstatic.lib;Windowscodecs.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <BaseAddress>0x66000000</BaseAddress>
+      <DelayLoadDLLs>advapi32.dll</DelayLoadDLLs>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetFileName)" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).pdb" "$(SolutionDir)bin\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\..\common\inc</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NXRMCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\inc;$(ProjectDir)\..\..\..\nudf\v1\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)$(TargetName)64$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)$(TargetName)64.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)$(TargetName)64.pdb</ProgramDatabaseFile>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ManifestFile>$(IntDir)$(TargetName)$(TargetExt).intermediate.manifest</ManifestFile>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>nudfstatic.lib;Windowscodecs.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <BaseAddress>0x66000000</BaseAddress>
+      <DelayLoadDLLs>advapi32.dll</DelayLoadDLLs>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetFileName)" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).pdb" "$(SolutionDir)bin\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\..\common\inc</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\excel.h" />
+    <ClInclude Include="..\..\inc\excel2010.h" />
+    <ClInclude Include="..\..\inc\mso.h" />
+    <ClInclude Include="..\..\inc\mso2010.h" />
+    <ClInclude Include="..\..\inc\outlook.h" />
+    <ClInclude Include="..\..\inc\outlook2010.h" />
+    <ClInclude Include="..\..\inc\powerpoint.h" />
+    <ClInclude Include="..\..\inc\powerpoint2010.h" />
+    <ClInclude Include="..\..\inc\word.h" />
+    <ClInclude Include="..\..\inc\word2010.h" />
+    <ClInclude Include="adobe.h" />
+    <ClInclude Include="clipboardctl.h" />
+    <ClInclude Include="d3dstate.h" />
+    <ClInclude Include="detour.h" />
+    <ClInclude Include="direct3d.h" />
+    <ClInclude Include="disasm.h" />
+    <ClInclude Include="dragdropctl.h" />
+    <ClInclude Include="emailctl.h" />
+    <ClInclude Include="excelevents.h" />
+    <ClInclude Include="filedialog.h" />
+    <ClInclude Include="fileopsink.h" />
+    <ClInclude Include="loadmodule.h" />
+    <ClInclude Include="nxrmcore.h" />
+    <ClInclude Include="nxrmcoreglobal.h" />
+    <ClInclude Include="office.h" />
+    <ClInclude Include="powerpointevents.h" />
+    <ClInclude Include="printingctl.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="saveasctl.h" />
+    <ClInclude Include="screenoverlay.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="wordevents.h" />
+    <ClInclude Include="x64.h" />
+    <ClInclude Include="x86.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\nxrmcorehlp.cpp" />
+    <ClCompile Include="adobe.cpp" />
+    <ClCompile Include="clipboardctl.cpp" />
+    <ClCompile Include="d3dstate.cpp" />
+    <ClCompile Include="detour.c" />
+    <ClCompile Include="direct3d.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="dragdropctl.cpp" />
+    <ClCompile Include="emailctl.cpp" />
+    <ClCompile Include="excelevents.cpp" />
+    <ClCompile Include="filedialog.cpp" />
+    <ClCompile Include="fileopsink.cpp" />
+    <ClCompile Include="loadmodule.cpp" />
+    <ClCompile Include="nxrmcore.cpp" />
+    <ClCompile Include="Office.cpp" />
+    <ClCompile Include="powerpointevents.cpp" />
+    <ClCompile Include="printingctl.cpp" />
+    <ClCompile Include="saveasctl.cpp" />
+    <ClCompile Include="screenoverlay.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="wordevents.cpp" />
+    <ClCompile Include="x64.c" />
+    <ClCompile Include="x86.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="nxrmcore.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="PixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">PixelShader.h</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ObjectFileOutput>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PixelShader.h</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </ObjectFileOutput>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">PixelShader.h</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ObjectFileOutput>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PixelShader.h</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ObjectFileOutput>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">g_Overlaypsshader</VariableName>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">g_Overlaypsshader</VariableName>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">g_Overlaypsshader</VariableName>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">g_Overlaypsshader</VariableName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NxrmPSMain</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NxrmPSMain</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NxrmPSMain</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NxrmPSMain</EntryPointName>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</EnableDebuggingInformation>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</EnableDebuggingInformation>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0_level_9_3</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4.0_level_9_3</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0_level_9_3</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4.0_level_9_3</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="PixelShader1.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NxrmPSMain</EntryPointName>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</EnableDebuggingInformation>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NxrmPSMain</EntryPointName>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0_level_9_3</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NxrmPSMain</EntryPointName>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</EnableDebuggingInformation>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NxrmPSMain</EntryPointName>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4.0_level_9_3</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </ObjectFileOutput>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">g_Overlaypsshader1</VariableName>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">g_Overlaypsshader1</VariableName>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">g_Overlaypsshader1</VariableName>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">g_Overlaypsshader1</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">PixelShader1.h</HeaderFileOutput>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">PixelShader1.h</HeaderFileOutput>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PixelShader1.h</HeaderFileOutput>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PixelShader1.h</HeaderFileOutput>
+    </FxCompile>
+    <FxCompile Include="VertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NxrmVSMain</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NxrmVSMain</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NxrmVSMain</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NxrmVSMain</EntryPointName>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">g_OverlayVsshader</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">VertexShader.h</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ObjectFileOutput>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">g_OverlayVsshader</VariableName>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VertexShader.h</HeaderFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ObjectFileOutput>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">g_OverlayVsshader</VariableName>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ObjectFileOutput>
+      <VariableName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">g_OverlayVsshader</VariableName>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </ObjectFileOutput>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">VertexShader.h</HeaderFileOutput>
+      <HeaderFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">VertexShader.h</HeaderFileOutput>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</EnableDebuggingInformation>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4.0_level_9_3</ShaderModel>
+      <DisableOptimizations Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</DisableOptimizations>
+      <EnableDebuggingInformation Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</EnableDebuggingInformation>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4.0_level_9_3</ShaderModel>
+    </FxCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\nkdf.h" />
+    <ClInclude Include="..\..\inc\nkdf\basic\csq.h" />
+    <ClInclude Include="..\..\inc\nkdf\basic\debug.h" />
+    <ClInclude Include="..\..\inc\nkdf\basic\defines.h" />
+    <ClInclude Include="..\..\inc\nkdf\basic\device.h" />
+    <ClInclude Include="..\..\inc\nkdf\basic\gtable.h" />
+    <ClInclude Include="..\..\inc\nkdf\basic\image.h" />
+    <ClInclude Include="..\..\inc\nkdf\basic\list.h" />
+    <ClInclude Include="..\..\inc\nkdf\basic\mem.h" />
+    <ClInclude Include="..\..\inc\nkdf\basic\ntapi.h" />
+    <ClInclude Include="..\..\inc\nkdf\basic\registry.h" />
+    <ClInclude Include="..\..\inc\nkdf\basic\string.h" />
+    <ClInclude Include="..\..\inc\nkdf\basic\time.h" />
+    <ClInclude Include="..\..\inc\nkdf\crypto\aes.h" />
+    <ClInclude Include="..\..\inc\nkdf\crypto\base64.h" />
+    <ClInclude Include="..\..\inc\nkdf\crypto\crc.h" />
+    <ClInclude Include="..\..\inc\nkdf\crypto\md5.h" />
+    <ClInclude Include="..\..\inc\nkdf\crypto\provider.h" />
+    <ClInclude Include="..\..\inc\nkdf\crypto\rc4.h" />
+    <ClInclude Include="..\..\inc\nkdf\crypto\rsa.h" />
+    <ClInclude Include="..\..\inc\nkdf\crypto\sha.h" />
+    <ClInclude Include="..\..\inc\nkdf\crypto\test.h" />
+    <ClInclude Include="..\..\inc\nkdf\fs\defines.h" />
+    <ClInclude Include="..\..\inc\nkdf\fs\disk.h" />
+    <ClInclude Include="..\..\inc\nkdf\fs\fltconn.h" />
+    <ClInclude Include="..\..\inc\nkdf\fs\fltcsq.h" />
+    <ClInclude Include="..\..\inc\nkdf\fs\fltop.h" />
+    <ClInclude Include="..\..\inc\nkdf\fs\fsop.h" />
+    <ClInclude Include="..\..\inc\nkdf\fs\vol.h" />
+    <ClInclude Include="..\..\inc\nkdf\log\filelog.h" />
+    <ClInclude Include="..\..\inc\nkdf\log\logdef.h" />
+    <ClInclude Include="..\..\inc\nkdf\process\monitor.h" />
+    <ClInclude Include="..\..\inc\nkdf\process\utility.h" />
+    <ClInclude Include="..\..\inc\nkdf\rmp\nxlfmt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\basic\csq.c" />
+    <ClCompile Include="..\basic\debug.c" />
+    <ClCompile Include="..\basic\defines.c" />
+    <ClCompile Include="..\basic\device.c" />
+    <ClCompile Include="..\basic\gtable.c" />
+    <ClCompile Include="..\basic\image.c" />
+    <ClCompile Include="..\basic\list.c" />
+    <ClCompile Include="..\basic\mem.c" />
+    <ClCompile Include="..\basic\ntapi.c" />
+    <ClCompile Include="..\basic\registry.c" />
+    <ClCompile Include="..\basic\string.c" />
+    <ClCompile Include="..\basic\time.c" />
+    <ClCompile Include="..\crypto\aes.c" />
+    <ClCompile Include="..\crypto\base64.c" />
+    <ClCompile Include="..\crypto\crc.c" />
+    <ClCompile Include="..\crypto\md5.c" />
+    <ClCompile Include="..\crypto\provider.c" />
+    <ClCompile Include="..\crypto\rc4.c" />
+    <ClCompile Include="..\crypto\rsa.c" />
+    <ClCompile Include="..\crypto\sha.c" />
+    <ClCompile Include="..\crypto\test.c" />
+    <ClCompile Include="..\fs\disk.c" />
+    <ClCompile Include="..\fs\fltconn.c" />
+    <ClCompile Include="..\fs\fltcsq.c" />
+    <ClCompile Include="..\fs\fltop.c" />
+    <ClCompile Include="..\fs\fsop.c" />
+    <ClCompile Include="..\fs\vol.c" />
+    <ClCompile Include="..\log\filelog.c" />
+    <ClCompile Include="..\process\monitor.c" />
+    <ClCompile Include="..\process\utility.c" />
+    <ClCompile Include="..\rmp\nxlk.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E818BD5A-7321-45EE-8862-0E8A42783E4E}</ProjectGuid>
+    <TemplateGuid>{0a049372-4c4d-4ea0-a64e-dc6ad88ceca1}</TemplateGuid>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <Configuration>Win8 Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">Win32</Platform>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <RootNamespace>nkdf</RootNamespace>
+    <VCTargetsPath Condition="'$(VCTargetsPath11)' != '' and '$(VisualStudioVersion)' == '11.0'">$(VCTargetsPath11)</VCTargetsPath>
+    <WindowsTargetPlatformVersion>$(LatestTargetPlatformVersion)</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Label="PropertySheets">
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LibraryPath>$(DDK_LibraryPath_DDKPlatform);$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir);$(IncludePath);$(DDK_INC_PATH)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LibraryPath>$(DDK_LibraryPath_DDKPlatform);$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir);$(IncludePath);$(DDK_INC_PATH)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LibraryPath>$(DDK_LibraryPath_DDKPlatform);$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir);$(IncludePath);$(DDK_INC_PATH)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LibraryPath>$(DDK_LibraryPath_DDKPlatform);$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir);$(IncludePath);$(DDK_INC_PATH)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level3</WarningLevel>
+      <CompileAs>CompileAsC</CompileAs>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AdditionalOptions>/kernel /MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>mkdir "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).lib" "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+mkdir "$(ProjectDir)\..\..\lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).lib" "$(ProjectDir)\..\..\lib\$(Platform)\$(Configuration)"
+</Command>
+    </PostBuildEvent>
+    <Lib>
+      <SubSystem>Native</SubSystem>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level3</WarningLevel>
+      <CompileAs>CompileAsC</CompileAs>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AdditionalOptions>/kernel /MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>mkdir "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).lib" "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+mkdir "$(ProjectDir)\..\..\lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).lib" "$(ProjectDir)\..\..\lib\$(Platform)\$(Configuration)"
+</Command>
+    </PostBuildEvent>
+    <Lib>
+      <SubSystem>Native</SubSystem>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level3</WarningLevel>
+      <CompileAs>CompileAsC</CompileAs>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AdditionalOptions>/kernel /MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>mkdir "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).lib" "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+mkdir "$(ProjectDir)\..\..\lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).lib" "$(ProjectDir)\..\..\lib\$(Platform)\$(Configuration)"
+</Command>
+    </PostBuildEvent>
+    <Lib>
+      <SubSystem>Native</SubSystem>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level3</WarningLevel>
+      <CompileAs>CompileAsC</CompileAs>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AdditionalOptions>/kernel /MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>mkdir "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).lib" "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+mkdir "$(ProjectDir)\..\..\lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).lib" "$(ProjectDir)\..\..\lib\$(Platform)\$(Configuration)"
+</Command>
+    </PostBuildEvent>
+    <Lib>
+      <SubSystem>Native</SubSystem>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="audit.cpp" />
+    <ClCompile Include="heartbeat.cpp" />
+    <ClCompile Include="nxrmrest.cpp" />
+    <ClCompile Include="register.cpp" />
+    <ClCompile Include="update.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\inc\nxrmrest\audit.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\heartbeat.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\nxrmrest.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\register.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\CheckUpdatesRequest.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\CheckUpdatesResponse.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\HeartBeatRequest.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\HeartBeatResponse.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\RegisterAgentRequest.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\RegisterAgentResponse.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\SendUserNotificationsRequest.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\SendUserNotificationsResponse.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\ActionType.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\AgentHeartBeatData.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\AgentPluginData.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\AgentProfile.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\AgentProfileStatusData.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\AgentRegistrationData.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\AgentStartupConfiguration.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\AgentType.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\AgentUpdateAcknowledgementData.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\AgentUpdates.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\BaseProfile.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\BasicTypes.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\CommonFaults.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\CommProfile.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\CustomObligationsTypes.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\HwInfo.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\KeyProfile.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\OsInfo.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\PolicyTypes.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\SharedFolderTypes.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\UserNotification.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\schema\types\Version.hpp" />
+    <ClInclude Include="..\inc\nxrmrest\update.hpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{226828FE-62A0-4753-9966-32BA5B5875DE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>nxrmrest</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\inc;..\..\nudf\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AssemblerOutput>All</AssemblerOutput>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)lib\$(Platform)\$(Configuration)" mkdir "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)lib\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\inc;..\..\nudf\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AssemblerOutput>All</AssemblerOutput>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)lib\$(Platform)\$(Configuration)" mkdir "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)lib\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\inc;..\..\nudf\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AssemblerOutput>All</AssemblerOutput>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)lib\$(Platform)\$(Configuration)" mkdir "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)lib\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\inc;..\..\nudf\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AssemblerOutput>All</AssemblerOutput>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)lib\$(Platform)\$(Configuration)" mkdir "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)lib\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

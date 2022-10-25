@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\asyncpipe.cpp" />
+    <ClCompile Include="..\src\cert.cpp" />
+    <ClCompile Include="..\src\crypto.cpp" />
+    <ClCompile Include="..\src\encoding.cpp" />
+    <ClCompile Include="..\src\file.cpp" />
+    <ClCompile Include="..\src\host.cpp" />
+    <ClCompile Include="..\src\httputil.cpp" />
+    <ClCompile Include="..\src\bitmap.cpp" />
+    <ClCompile Include="..\src\http_client.cpp" />
+    <ClCompile Include="..\src\knowndir.cpp" />
+    <ClCompile Include="..\src\log.cpp" />
+    <ClCompile Include="..\src\nudf.cpp" />
+    <ClCompile Include="..\src\nxlfile.cpp" />
+    <ClCompile Include="..\src\nxlutil.cpp" />
+    <ClCompile Include="..\src\nxlutilex.cpp" />
+    <ClCompile Include="..\src\nxrmuihlp.cpp" />
+    <ClCompile Include="..\src\path.cpp" />
+    <ClCompile Include="..\src\pe.cpp" />
+    <ClCompile Include="..\src\pipe.cpp" />
+    <ClCompile Include="..\src\registry.cpp" />
+    <ClCompile Include="..\src\resutil.cpp" />
+    <ClCompile Include="..\src\rwlock.cpp" />
+    <ClCompile Include="..\src\sa.cpp" />
+    <ClCompile Include="..\src\secure.cpp" />
+    <ClCompile Include="..\src\security.cpp" />
+    <ClCompile Include="..\src\session.cpp" />
+    <ClCompile Include="..\src\stopwatch.cpp" />
+    <ClCompile Include="..\src\svc.cpp" />
+    <ClCompile Include="..\src\thread.cpp" />
+    <ClCompile Include="..\src\uri.cpp" />
+    <ClCompile Include="..\src\user.cpp" />
+    <ClCompile Include="..\src\web\conversions.cpp" />
+    <ClCompile Include="..\src\web\date_time.cpp" />
+    <ClCompile Include="..\src\web\error_category.cpp" />
+    <ClCompile Include="..\src\web\json.cpp" />
+    <ClCompile Include="..\src\web\json_parsing.cpp" />
+    <ClCompile Include="..\src\web\json_serialization.cpp" />
+    <ClCompile Include="..\src\xmlparser.cpp" />
+    <ClCompile Include="..\src\ziputil.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\inc\nudf\args.hpp" />
+    <ClInclude Include="..\inc\nudf\asyncpipe.hpp" />
+    <ClInclude Include="..\inc\nudf\bitsmap.hpp" />
+    <ClInclude Include="..\inc\nudf\cert.hpp" />
+    <ClInclude Include="..\inc\nudf\convert.hpp" />
+    <ClInclude Include="..\inc\nudf\crypto.hpp" />
+    <ClInclude Include="..\inc\nudf\encoding.hpp" />
+    <ClInclude Include="..\inc\nudf\exception.hpp" />
+    <ClInclude Include="..\inc\nudf\file.hpp" />
+    <ClInclude Include="..\inc\nudf\host.hpp" />
+    <ClInclude Include="..\inc\nudf\httputil.hpp" />
+    <ClInclude Include="..\inc\nudf\bitmap.hpp" />
+    <ClInclude Include="..\inc\nudf\http_client.hpp" />
+    <ClInclude Include="..\inc\nudf\knowndir.hpp" />
+    <ClInclude Include="..\inc\nudf\listentry.hpp" />
+    <ClInclude Include="..\inc\nudf\log.hpp" />
+    <ClInclude Include="..\inc\nudf\lrucache.hpp" />
+    <ClInclude Include="..\inc\nudf\nxlfile.hpp" />
+    <ClInclude Include="..\inc\nudf\nxlutil.hpp" />
+    <ClInclude Include="..\inc\nudf\nxlutilex.hpp" />
+    <ClInclude Include="..\inc\nudf\nxrmuihlp.hpp" />
+    <ClInclude Include="..\inc\nudf\path.hpp" />
+    <ClInclude Include="..\inc\nudf\pe.hpp" />
+    <ClInclude Include="..\inc\nudf\pipe.hpp" />
+    <ClInclude Include="..\inc\nudf\regex.hpp" />
+    <ClInclude Include="..\inc\nudf\registry.hpp" />
+    <ClInclude Include="..\inc\nudf\resutil.hpp" />
+    <ClInclude Include="..\inc\nudf\rwlock.hpp" />
+    <ClInclude Include="..\inc\nudf\sa.hpp" />
+    <ClInclude Include="..\inc\nudf\secure.hpp" />
+    <ClInclude Include="..\inc\nudf\security.hpp" />
+    <ClInclude Include="..\inc\nudf\session.hpp" />
+    <ClInclude Include="..\inc\nudf\shared\enginectl.h" />
+    <ClInclude Include="..\inc\nudf\shared\engineenv.h" />
+    <ClInclude Include="..\inc\nudf\shared\fltdef.h" />
+    <ClInclude Include="..\inc\nudf\shared\keydef.h" />
+    <ClInclude Include="..\inc\nudf\shared\logdef.h" />
+    <ClInclude Include="..\inc\nudf\shared\moddef.h" />
+    <ClInclude Include="..\inc\nudf\shared\nxlfmt.h" />
+    <ClInclude Include="..\inc\nudf\shared\obdef.h" />
+    <ClInclude Include="..\inc\nudf\shared\obutil.h" />
+    <ClInclude Include="..\inc\nudf\shared\officelayout.h" />
+    <ClInclude Include="..\inc\nudf\shared\rightsdef.h" />
+    <ClInclude Include="..\inc\nudf\stopwatch.hpp" />
+    <ClInclude Include="..\inc\nudf\string.hpp" />
+    <ClInclude Include="..\inc\nudf\svc.hpp" />
+    <ClInclude Include="..\inc\nudf\thread.hpp" />
+    <ClInclude Include="..\inc\nudf\time.hpp" />
+    <ClInclude Include="..\inc\nudf\uniqueguard.hpp" />
+    <ClInclude Include="..\inc\nudf\uri.hpp" />
+    <ClInclude Include="..\inc\nudf\user.hpp" />
+    <ClInclude Include="..\inc\nudf\web\conversions.hpp" />
+    <ClInclude Include="..\inc\nudf\web\date_time.hpp" />
+    <ClInclude Include="..\inc\nudf\web\error_category.hpp" />
+    <ClInclude Include="..\inc\nudf\web\json.hpp" />
+    <ClInclude Include="..\inc\nudf\web\SafeInt3.hpp" />
+    <ClInclude Include="..\inc\nudf\xmlparser.hpp" />
+    <ClInclude Include="..\inc\nudf\ziputil.hpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6DB3D2FC-2C2A-43E4-97E8-D607B2F37D07}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>nudfstatic</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>..\..\..\external\boost\boost_1_59_0\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>..\..\..\external\boost\boost_1_59_0\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>..\..\..\external\boost\boost_1_59_0\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>..\..\..\external\boost\boost_1_59_0\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\inc</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AssemblerOutput>All</AssemblerOutput>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)lib\$(Platform)\$(Configuration)" mkdir "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)lib\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\inc</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AssemblerOutput>All</AssemblerOutput>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)lib\$(Platform)\$(Configuration)" mkdir "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)lib\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\inc</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AssemblerOutput>All</AssemblerOutput>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)lib\$(Platform)\$(Configuration)" mkdir "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)lib\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\inc</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AssemblerOutput>All</AssemblerOutput>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>if not exist "$(SolutionDir)lib\$(Platform)\$(Configuration)" mkdir "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)lib\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

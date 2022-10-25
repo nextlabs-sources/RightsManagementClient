@@ -1,0 +1,6 @@
+
+LIBRARY nxrmsdk_mt
+EXPORTS
+    RSAlloc                        @1  NONAME
+    RSAllocEx                      @2  NONAME
+    RSFree                         @3  NONAME

@@ -1,0 +1,257 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "nxversion.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_NXRMUI              ICON                    "nxrmui.ico"
+IDI_SMALL               ICON                    "small.ico"
+IDI_SETTING             ICON                    "icon_setting.ico"
+IDI_REFRESH             ICON                    "icon_refresh.ico"
+IDI_STATE_OK            ICON                    "state_ok.ico"
+IDI_STATE_WARNING       ICON                    "state_warning.ico"
+IDI_CLOSE_HOVER         ICON                    "icon_close_hover.ico"
+IDI_CLOSE_NAORMAL       ICON                    "icon_close_normal.ico"
+IDI_POLICY              ICON                    "icon_policy.ico"
+IDI_BRAND               ICON                    "icon_brand.ico"
+IDI_SWITCH_ON           ICON                    "icon_on.ico"
+IDI_SWITCH_OFF          ICON                    "icon_off.ico"
+IDI_BTN_YES             ICON                    "icon_yes.ico"
+IDI_BTN_NO              ICON                    "icon_no.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BRAND               BITMAP                  "brand.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_NXRMUI MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_NXRMUI ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About NextLabs Rights Management"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "NextLabs Rights Management, Version 1.0",IDC_VERSION,42,14,114,8,SS_NOPREFIX
+    LTEXT           VER_LEGALCOPYRIGHT_STR,IDC_COPYRIGHT,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_MAIN_DLG DIALOGEX 0, 0, 190, 203
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_BORDER
+CLASS "NXRMUI"
+FONT 8, "Segoe UI", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_MAIN_BTN_CLOSE,"Button",BS_OWNERDRAW | WS_TABSTOP,170,5,15,15
+    CONTROL         "",IDC_MAIN_STATE_ICON,"Button",BS_OWNERDRAW | WS_TABSTOP,40,20,24,24
+    CONTROL         "Disconnected",IDC_MAIN_STATE_STR_CONNECT,"Button",BS_OWNERDRAW | WS_TABSTOP,70,24,120,15
+    CONTROL         "Policy",IDC_MAIN_POLICY_LABEL,"Button",BS_OWNERDRAW | WS_DISABLED,0,65,46,24
+    CONTROL         "8.0.0.5",IDC_MAIN_POLICY_VERSION,"Button",BS_OWNERDRAW | BS_LEFT | BS_VCENTER | WS_DISABLED,46,65,120,24
+    CONTROL         "",IDC_MAIN_POLICY_REFRESH,"Button",BS_OWNERDRAW | WS_TABSTOP,166,65,24,24
+    CONTROL         "LAST UPDATE ON",IDC_MAIN_LAST_UPDATE_LABEL,"Button",BS_OWNERDRAW | WS_DISABLED,0,89,95,16
+    CONTROL         "31 MAR 2015 04:00 PM",IDC_MAIN_LAST_UPDATE_TIME,"Button",BS_OWNERDRAW | WS_DISABLED,95,89,95,16
+    CONTROL         "",IDC_MAIN_BRAND_BMP,"Button",BS_OWNERDRAW | WS_TABSTOP,0,179,70,24
+    CONTROL         "|",IDC_MAIN_VERTICAL,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,70,179,6,24
+    CONTROL         "RIGHTS MANAGEMENT",IDC_MAIN_TITLE,"Button",BS_OWNERDRAW | WS_DISABLED | WS_TABSTOP,76,179,90,24
+    CONTROL         "",IDC_MAIN_SETTING,"Button",BS_OWNERDRAW | WS_TABSTOP,166,179,24,24
+END
+
+IDD_MAIN_POPUP DIALOGEX 0, 0, 190, 90
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "Segoe UI", 400, 0, 0x0
+BEGIN
+    CTEXT           "Show popup notification",IDC_MAIN_POPUP_LABEL,0,14,189,19
+    CONTROL         "",IDC_MAIN_POPUP_SWITCH,"Button",BS_OWNERDRAW | WS_TABSTOP,69,33,63,23
+END
+
+IDD_NXRMNOTIFY DIALOGEX 0, 0, 200, 120
+STYLE DS_SETFONT | WS_POPUP | WS_BORDER
+FONT 8, "Segoe UI", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION VER_FILEVERSION
+ PRODUCTVERSION VER_PRODUCTVERSION
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "NextLabs, Inc."
+            VALUE "FileDescription", "NextLabs Rights Management Tray Application"
+            VALUE "FileVersion", VER_FILEVERSION_STR
+            VALUE "InternalName", "nxrmtray.exe"
+            VALUE "LegalCopyright", VER_LEGALCOPYRIGHT_STR
+            VALUE "OriginalFilename", "nxrmtray.exe"
+            VALUE "ProductName", "NextLabs Rights Management"
+            VALUE "ProductVersion", VER_PRODUCTVERSION_STR
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_MAIN_DLG, DIALOG
+    BEGIN
+    END
+
+    IDD_MAIN_POPUP, DIALOG
+    BEGIN
+    END
+
+    IDD_NXRMNOTIFY, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "NextLabs Rights Management"
+    IDC_NXRMUI              "NXRMUI"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\basic">
+      <UniqueIdentifier>{2e4571e0-67fd-4e5d-a451-f9c6f23ae664}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\crypto">
+      <UniqueIdentifier>{35258e45-3806-4ff2-aba7-c0c75bc04692}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\fs">
+      <UniqueIdentifier>{81a98401-f2c4-4cc3-a6e1-9866b4d990bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\log">
+      <UniqueIdentifier>{7c75de76-dac6-4bb0-a882-8355c0d1fad1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\process">
+      <UniqueIdentifier>{6ffc8b7f-fe9c-49bd-900e-0b4da277474f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\basic">
+      <UniqueIdentifier>{e36be287-424c-4a76-911c-a449b84a4dc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\crypto">
+      <UniqueIdentifier>{7b1c97d8-b978-4be9-bca4-fdba71cd266a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\fs">
+      <UniqueIdentifier>{458a0e17-00ec-475d-84f0-401e3fbc8ff7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\log">
+      <UniqueIdentifier>{b665de3f-9be6-4ba6-bef2-e4dc49d67e2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\process">
+      <UniqueIdentifier>{1b6624df-d223-4ef2-bb6d-141c97342a35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rmp">
+      <UniqueIdentifier>{060ebae4-240b-493b-a1f0-25d8aa0b9d04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rmp">
+      <UniqueIdentifier>{3a6f7528-5b13-40d7-9f26-744cf468e1ef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\nkdf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\basic\csq.h">
+      <Filter>Header Files\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\basic\debug.h">
+      <Filter>Header Files\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\basic\defines.h">
+      <Filter>Header Files\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\basic\device.h">
+      <Filter>Header Files\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\basic\gtable.h">
+      <Filter>Header Files\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\basic\image.h">
+      <Filter>Header Files\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\basic\list.h">
+      <Filter>Header Files\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\basic\mem.h">
+      <Filter>Header Files\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\basic\ntapi.h">
+      <Filter>Header Files\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\basic\registry.h">
+      <Filter>Header Files\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\basic\string.h">
+      <Filter>Header Files\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\basic\time.h">
+      <Filter>Header Files\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\crypto\aes.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\crypto\base64.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\crypto\crc.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\crypto\md5.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\crypto\provider.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\crypto\rc4.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\crypto\rsa.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\crypto\sha.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\crypto\test.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\fs\defines.h">
+      <Filter>Header Files\fs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\fs\disk.h">
+      <Filter>Header Files\fs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\fs\fltconn.h">
+      <Filter>Header Files\fs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\fs\fltcsq.h">
+      <Filter>Header Files\fs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\fs\fltop.h">
+      <Filter>Header Files\fs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\fs\fsop.h">
+      <Filter>Header Files\fs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\fs\vol.h">
+      <Filter>Header Files\fs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\log\filelog.h">
+      <Filter>Header Files\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\log\logdef.h">
+      <Filter>Header Files\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\process\monitor.h">
+      <Filter>Header Files\process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\process\utility.h">
+      <Filter>Header Files\process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\nkdf\rmp\nxlfmt.h">
+      <Filter>Header Files\rmp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\basic\csq.c">
+      <Filter>Source Files\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\basic\debug.c">
+      <Filter>Source Files\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\basic\defines.c">
+      <Filter>Source Files\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\basic\device.c">
+      <Filter>Source Files\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\basic\gtable.c">
+      <Filter>Source Files\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\basic\image.c">
+      <Filter>Source Files\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\basic\list.c">
+      <Filter>Source Files\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\basic\mem.c">
+      <Filter>Source Files\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\basic\ntapi.c">
+      <Filter>Source Files\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\basic\registry.c">
+      <Filter>Source Files\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\basic\string.c">
+      <Filter>Source Files\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\basic\time.c">
+      <Filter>Source Files\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\aes.c">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\base64.c">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\crc.c">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\md5.c">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\provider.c">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\rc4.c">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\rsa.c">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\sha.c">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\crypto\test.c">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fs\disk.c">
+      <Filter>Source Files\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fs\fltconn.c">
+      <Filter>Source Files\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fs\fltcsq.c">
+      <Filter>Source Files\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fs\fltop.c">
+      <Filter>Source Files\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fs\fsop.c">
+      <Filter>Source Files\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fs\vol.c">
+      <Filter>Source Files\fs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\log\filelog.c">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\process\monitor.c">
+      <Filter>Source Files\process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\process\utility.c">
+      <Filter>Source Files\process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rmp\nxlk.c">
+      <Filter>Source Files\rmp</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

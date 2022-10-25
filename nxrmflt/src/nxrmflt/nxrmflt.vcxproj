@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nxrmfltCbdq.c" />
+    <ClCompile Include="nxrmfltcleanup.c" />
+    <ClCompile Include="nxrmfltclose.c" />
+    <ClCompile Include="nxrmfltcommunication.c" />
+    <ClCompile Include="nxrmfltcreate.c" />
+    <ClCompile Include="nxrmfltdirectorycontrol.c" />
+    <ClCompile Include="nxrmfltexpire.c" />
+    <ClCompile Include="nxrmfltnxlcachemgr.c" />
+    <ClCompile Include="nxrmfltqueryea.c" />
+    <ClCompile Include="nxrmfltqueryinformation.c" />
+    <ClCompile Include="nxrmfltqueryopen.c" />
+    <ClCompile Include="nxrmfltsetea.c" />
+    <ClCompile Include="nxrmfltsetinformation.c" />
+    <ClCompile Include="nxrmfltsetsecurity.c" />
+    <ClCompile Include="nxrmfltutils.c" />
+    <ClCompile Include="nxrmfltwrite.c" />
+    <ClCompile Include="rbtree.c" />
+    <ResourceCompile Include="nxrmflt.rc" />
+    <ClCompile Include="nxrmflt.c" />
+    <Inf Include="nxrmflt.inf" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8F326D93-5526-45A9-BF16-10C2D2ECC348}</ProjectGuid>
+    <TemplateGuid>{f2f62967-0815-4fd7-9b86-6eedcac766eb}</TemplateGuid>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <Configuration>Win8 Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">Win32</Platform>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <RootNamespace>nxrmflt</RootNamespace>
+    <VCTargetsPath Condition="'$(VCTargetsPath11)' != '' and '$(VisualStudioVersion)' == '11.0'">$(VCTargetsPath11)</VCTargetsPath>
+    <WindowsTargetPlatformVersion>$(LatestTargetPlatformVersion)</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Label="PropertySheets">
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>$(DDK_LIB_PATH)\fltmgr.lib;nkdf.lib;Cng.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)\..\..\..\nkdf\lib\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)\..\..\..\nkdf\lib\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)\..\..\..\nkdf\lib\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)\..\..\..\nkdf\lib\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/integritycheck %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">/integritycheck %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/integritycheck %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">/integritycheck %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <ClCompile />
+    <ClCompile>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)\..\..\inc;$(ProjectDir)\..\..\..\nkdf\inc;$(ProjectDir)\..\..\..\nudf\v1\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">All</AssemblerOutput>
+    </ClCompile>
+    <ClCompile>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)\..\..\inc;$(ProjectDir)\..\..\..\nkdf\inc;$(ProjectDir)\..\..\..\nudf\v1\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level3</WarningLevel>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">All</AssemblerOutput>
+    </ClCompile>
+    <ClCompile />
+    <ClCompile />
+    <ClCompile>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)\..\..\inc;$(ProjectDir)\..\..\..\nkdf\inc;$(ProjectDir)\..\..\..\nudf\v1\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Level3</WarningLevel>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">All</AssemblerOutput>
+    </ClCompile>
+    <ClCompile>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)\..\..\inc;$(ProjectDir)\..\..\..\nkdf\inc;$(ProjectDir)\..\..\..\nudf\v1\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Level3</WarningLevel>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">All</AssemblerOutput>
+    </ClCompile>
+    <ClCompile />
+    <PostBuildEvent />
+    <PostBuildEvent>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mkdir "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetFileName)" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).pdb" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).inf" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName)\$(TargetName).cat" "$(SolutionDir)bin\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mkdir "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetFileName)" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).pdb" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).inf" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName)\$(TargetName).cat" "$(SolutionDir)bin\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+    <PostBuildEvent />
+    <PostBuildEvent />
+    <PostBuildEvent>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mkdir "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetFileName)" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).pdb" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).inf" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName)\$(TargetName).cat" "$(SolutionDir)bin\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mkdir "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetFileName)" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).pdb" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).inf" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName)\$(TargetName).cat" "$(SolutionDir)bin\$(Platform)\$(Configuration)"</Command>
+    </PostBuildEvent>
+    <PostBuildEvent />
+    <ResourceCompile>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\common\inc</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\common\inc</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\common\inc</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\common\inc</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <FilesToPackage Include="$(TargetPath)" />
+    <FilesToPackage Include="@(Inf->'%(CopyOutput)')" Condition="'@(Inf)'!=''" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\nxrmflt.h" />
+    <ClInclude Include="nxrmfltCbdq.h" />
+    <ClInclude Include="nxrmfltcleanup.h" />
+    <ClInclude Include="nxrmfltclose.h" />
+    <ClInclude Include="nxrmfltcommunication.h" />
+    <ClInclude Include="nxrmfltcreate.h" />
+    <ClInclude Include="nxrmfltdef.h" />
+    <ClInclude Include="nxrmfltdirectorycontrol.h" />
+    <ClInclude Include="nxrmfltexpire.h" />
+    <ClInclude Include="nxrmfltnxlcachemgr.h" />
+    <ClInclude Include="nxrmfltqueryea.h" />
+    <ClInclude Include="nxrmfltqueryinformation.h" />
+    <ClInclude Include="nxrmfltqueryopen.h" />
+    <ClInclude Include="nxrmfltsetea.h" />
+    <ClInclude Include="nxrmfltsetinformation.h" />
+    <ClInclude Include="nxrmfltsetsecurity.h" />
+    <ClInclude Include="nxrmfltutils.h" />
+    <ClInclude Include="nxrmfltwrite.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

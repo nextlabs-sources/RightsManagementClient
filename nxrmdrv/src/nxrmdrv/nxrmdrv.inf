@@ -1,0 +1,75 @@
+;;
+;; nxrmdrv.inf
+;;
+;;;
+;;; Copyright (c) 2014, NextLabs, Inc.
+;;;
+
+[Version]
+Signature="$WINDOWS NT$"
+Provider=%ManufacturerName%
+DriverPackageType=KernelService
+Class=NXRMDRV
+ClassGuid={3F9BE6C6-C237-4ACB-85F3-3F2A7040A1A4}
+DriverVer=
+CatalogFile=nxrmdrv.cat
+
+[DestinationDirs]
+DefaultDestDir = 12
+nxrmdrv.DriverFiles = 12
+
+;;
+;; Default install sections
+;;
+
+[DefaultInstall]
+OptionDesc          = %ServiceDescription%
+CopyFiles           = nxrmdrv.DriverFiles
+
+[DefaultInstall.Services]
+AddService          = %ServiceName%,,nxrmdrv.Service
+
+;;
+;; Default uninstall sections
+;;
+
+[DefaultUninstall]
+DelFiles            = nxrmdrv.DriverFiles
+
+[DefaultUninstall.Services]
+DelService = nxrmdrv
+
+;;
+;; Services Section
+;;
+
+[nxrmdrv.Service]
+DisplayName      = %ServiceName%
+ServiceBinary    = %12%\%DriverName%.sys        ;%windir%\system32\drivers\
+ServiceType      = 1                            ;SERVICE_KERNEL_DRIVER
+StartType        = 1                            ;SERVICE_SYSTEM_START
+ErrorControl     = 1                            ;SERVICE_ERROR_NORMAL
+
+;;
+;; Copy Files
+;;
+
+[nxrmdrv.DriverFiles]
+%DriverName%.sys,,,6
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+nxrmdrv.sys = 1,,
+
+;;
+;; String Section
+;;
+
+[Strings]
+ManufacturerName	= "NextLabs, Inc."
+DiskName			= "NextLabs Rights Managment Source Disk"
+ServiceDescription	= "NextLab Rights Managment Driver"
+ServiceName			= "nxrmdrv"
+DriverName			= "nxrmdrv"

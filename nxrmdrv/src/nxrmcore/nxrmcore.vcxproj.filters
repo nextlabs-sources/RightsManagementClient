@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxrmcore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x86.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="detour.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="disasm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nxrmcoreglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="office.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="powerpointevents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\mso.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\powerpoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="screenoverlay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="printingctl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\excel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\outlook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\word.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wordevents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="loadmodule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\excel2010.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\mso2010.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\outlook2010.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\powerpoint2010.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\word2010.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="direct3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="excelevents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="adobe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="saveasctl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="filedialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fileopsink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clipboardctl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dragdropctl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emailctl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dstate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nxrmcore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="x64.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="x86.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="detour.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Office.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="powerpointevents.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\nxrmcorehlp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="screenoverlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="printingctl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wordevents.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="loadmodule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="direct3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="excelevents.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="adobe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="saveasctl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fileopsink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clipboardctl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dragdropctl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="emailctl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="d3dstate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="nxrmcore.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="PixelShader.hlsl">
+      <Filter>Header Files</Filter>
+    </FxCompile>
+    <FxCompile Include="VertexShader.hlsl">
+      <Filter>Header Files</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader1.hlsl">
+      <Filter>Header Files</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

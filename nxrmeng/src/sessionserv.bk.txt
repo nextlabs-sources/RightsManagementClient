@@ -1,0 +1,60 @@
+
+
+class user_info
+{
+public:
+    user_info()
+    {
+    }
+
+    user_info(const std::wstring& name, const std::wstring& id) : _name(name), _id(id)
+    {
+        std::transform(_id.begin(), _id.end(), _id.begin(), toupper);
+        std::transform(_name.begin(), _name.end(), _name.begin(), tolower);
+    }
+
+    user_info(const std::wstring& name, const std::wstring& id, const std::map<std::wstring,std::wstring>& attrs) : _name(name), _id(id), _attributes(attrs)
+    {
+        std::transform(_id.begin(), _id.end(), _id.begin(), toupper);
+        std::transform(_name.begin(), _name.end(), _name.begin(), tolower);
+        std::for_each(_attributes.begin(), _attributes.end(), [&](std::pair<std::wstring,std::wstring>& attr){
+            std::transform(attr.first.begin(), attr.first.end(), attr.first.begin(), tolower);
+            std::transform(attr.second.begin(), attr.second.end(), attr.second.begin(), tolower);
+        });
+    }
+
+    virtual ~user_info()
+    {
+    }
+
+    inline bool empty() const {return _id.empty();}
+    inline void clear() {_id.clear(); _name.clear();_attributes.clear();}
+
+    inline const std::wstring& id() const {return _id;}
+    inline const std::wstring& name() const {return _name;}
+    inline const std::map<std::wstring,std::wstring>& attributes() const {return _attributes;}
+
+    inline user_info& operator = (const user_info& other)
+    {
+        if(this != &other) {
+            _name = other.name();
+            _id = other.id();
+            _attributes = other.attributes();
+        }
+        return *this;
+    }
+
+private:
+    std::wstring    _name;
+    std::wstring    _id;
+    std::map<std::wstring,std::wstring> _attributes;
+};
+
+
+
+    inline const user_info& GetCurrentUser() const throw() {return _logon_user.empty() ? _session_user : _logon_user;}
+	
+	
+private:
+    user_info           _session_user;
+    user_info           _logon_user;

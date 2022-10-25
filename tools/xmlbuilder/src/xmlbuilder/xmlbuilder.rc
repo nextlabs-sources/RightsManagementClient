@@ -1,0 +1,221 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+#include "nxversion.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "#include ""nxversion.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#include ""res\\xmlbuilder.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""      // Standard components\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""afxribbon.rc""   // MFC ribbon and control bar resources\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\xmlgeneratetool.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_XMLBUILDER_DIALOG DIALOGEX 0, 0, 332, 218
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "NextLabs Rights Management Client Packager Tool"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         IDB_BITMAPwelcome,IDC_STATICwelcomepic,"Static",SS_BITMAP|SS_REALSIZECONTROL,0,0,332,192
+    LTEXT           "Welcome to the NextLabs Rights Management Client Packager Tool",IDC_STATICwelcometitle,120,7,205,30
+    LTEXT           "",IDC_STATICwelcometext,120,45,205,65
+    CONTROL         "I &agree to the Terms and Conditions of Installation as outlined in the Administrator's Guide.",IDC_CHECKagree,"Button",BS_AUTOCHECKBOX | BS_MULTILINE| WS_TABSTOP,120,138,205,21
+    CONTROL         IDB_BITMAPbanner,IDC_STATICbannerpic,"Static",SS_BITMAP|SS_REALSIZECONTROL|SS_SUNKEN,0,0,332,37
+    LTEXT           "",IDC_STATICbannertitle,11,5,280,10
+    LTEXT           "",IDC_STATICbannertext,19,18,272,17
+    LTEXT           "Pla&tform(s):",IDC_STATICplatformprompt,19,60,140,10
+    AUTOCHECKBOX    "", IDC_CHECKplatform0,166,59,140,11,BS_AUTOCHECKBOX | WS_TABSTOP
+    AUTOCHECKBOX    "", IDC_CHECKplatform1,166,74,140,11,BS_AUTOCHECKBOX | WS_TABSTOP
+    LTEXT           "&Language:",IDC_STATIClanguageprompt,19,120,140,10
+    COMBOBOX        IDC_COMBOlanguage,166,118,147,50,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Policy Server web service URL:",IDC_STATICurlprompt,19,45,272,10
+    EDITTEXT        IDC_EDITurl,19,60,242,13,ES_AUTOHSCROLL
+    LTEXT           "&Installation Package destination location:",IDC_STATICdestpathprompt,19,90,272,10
+    EDITTEXT        IDC_EDITdestpath,19,105,242,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "B&rowse",IDBROWSE,267,104,58,14
+    LTEXT           "Error: path name cannot contain '<>|""/:*?' symbols.",IDC_STATICinvalidsymbols,19,120,272,10
+    CONTROL         "&Use Rights Management Server login",IDC_CHECKusermslogin,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,135,272,10
+    LTEXT           "&Default domain:",IDC_STATICdefaultdomainprompt,19,150,272,10
+    EDITTEXT        IDC_EDITdefaultdomain,19,165,242,13,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATICresult,19,60,272,120
+    GROUPBOX        "",IDC_GROUPBOXline,0,188,332,5
+    DEFPUSHBUTTON   "< &Back",IDPREVIOUS,145,200,58,14
+    DEFPUSHBUTTON   "",IDOK,204,200,58,14
+    PUSHBUTTON      "Cancel",IDCANCEL,267,200,58,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION VER_FILEVERSION
+ PRODUCTVERSION VER_PRODUCTVERSION
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "ClientPackageBuilder"
+            VALUE "FileVersion", VER_FILEVERSION_STR
+            VALUE "InternalName", "ClientPackageBuilder.exe"
+            VALUE "LegalCopyright", VER_LEGALCOPYRIGHT_STR
+            VALUE "OriginalFilename", "ClientPackageBuilder.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", VER_PRODUCTVERSION_STR
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_XMLBUILDER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 354
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAPbanner        BITMAP                  "Banner.bmp"
+IDB_BITMAPwelcome       BITMAP                  "Welcome.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_STRINGfilenotfound  "The Client Package Builder is unable to locate the configuration file.  The application will exit."
+    IDS_STRINGerror "Error"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+//#include "res\xmlbuilder.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"      // Standard components
+#if !defined(_AFXDLL)
+#include "afxribbon.rc"   // MFC ribbon and control bar resources
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

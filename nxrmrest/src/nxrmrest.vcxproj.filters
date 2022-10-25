@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\schema">
+      <UniqueIdentifier>{208980ae-f517-4275-963b-33049ff616af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\schema\types">
+      <UniqueIdentifier>{5e290c52-9971-4fd2-8cc6-4dd2ce1c4036}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nxrmrest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="register.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="update.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="heartbeat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\inc\nxrmrest\nxrmrest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\register.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\audit.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\update.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\heartbeat.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\HeartBeatResponse.hpp">
+      <Filter>Header Files\schema</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\RegisterAgentRequest.hpp">
+      <Filter>Header Files\schema</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\RegisterAgentResponse.hpp">
+      <Filter>Header Files\schema</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\SendUserNotificationsRequest.hpp">
+      <Filter>Header Files\schema</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\SendUserNotificationsResponse.hpp">
+      <Filter>Header Files\schema</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\HeartBeatRequest.hpp">
+      <Filter>Header Files\schema</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\AgentProfileStatusData.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\AgentRegistrationData.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\AgentStartupConfiguration.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\AgentType.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\AgentUpdateAcknowledgementData.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\AgentUpdates.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\BaseProfile.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\BasicTypes.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\CommonFaults.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\CommProfile.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\CustomObligationsTypes.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\PolicyTypes.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\SharedFolderTypes.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\UserNotification.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\Version.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\ActionType.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\AgentHeartBeatData.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\AgentPluginData.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\AgentProfile.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\CheckUpdatesRequest.hpp">
+      <Filter>Header Files\schema</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\CheckUpdatesResponse.hpp">
+      <Filter>Header Files\schema</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\OsInfo.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\HwInfo.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\nxrmrest\schema\types\KeyProfile.hpp">
+      <Filter>Header Files\schema\types</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

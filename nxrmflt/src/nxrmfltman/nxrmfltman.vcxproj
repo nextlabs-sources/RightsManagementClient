@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nxrmfltman.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\nxrmfltman.h" />
+    <ClInclude Include="listhlp.h" />
+    <ClInclude Include="loghlp.hpp" />
+    <ClInclude Include="nxrmfltmandef.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nxrmfltman.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="nxrmfltman.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{96286F49-F0D7-47DF-8B10-0EFE6029E418}</ProjectGuid>
+    <TemplateGuid>{5ce256cb-a826-4703-9b24-ad2d556ad23b}</TemplateGuid>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <Configuration>Win8 Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">Win32</Platform>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <RootNamespace>nxrmfltman</RootNamespace>
+    <VCTargetsPath Condition="'$(VCTargetsPath11)' != '' and '$(VisualStudioVersion)' == '11.0'">$(VCTargetsPath11)</VCTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Label="PropertySheets">
+    <PlatformToolset>v140</PlatformToolset>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <TargetVersion>Windows7</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\..\..\external\boost\boost_1_59_0\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\..\..\external\boost\boost_1_59_0\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\..\..\external\boost\boost_1_59_0\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\..\..\external\boost\boost_1_59_0\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\inc;$(ProjectDir)\..\..\..\nudf\v1\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <AssemblerOutput>All</AssemblerOutput>
+      <PreprocessorDefinitions>_X86_=1;i386=1;STD_CALL;NXRMFLTMAN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>mkdir "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetFileName)" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).pdb" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+mkdir "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).lib" "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+mkdir "$(ProjectDir)..\..\lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).lib" "$(ProjectDir)..\..\lib\$(Platform)\$(Configuration)"
+</Command>
+    </PostBuildEvent>
+    <Link>
+      <ModuleDefinitionFile>nxrmfltman.def</ModuleDefinitionFile>
+      <AdditionalDependencies>nudf.lib;FltLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\..\common\inc</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\inc;$(ProjectDir)\..\..\..\nudf\v1\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <AssemblerOutput>All</AssemblerOutput>
+      <PreprocessorDefinitions>_X86_=1;i386=1;STD_CALL;NXRMFLTMAN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>mkdir "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetFileName)" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).pdb" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+mkdir "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).lib" "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+mkdir "$(ProjectDir)..\..\lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).lib" "$(ProjectDir)..\..\lib\$(Platform)\$(Configuration)"
+</Command>
+    </PostBuildEvent>
+    <Link>
+      <ModuleDefinitionFile>nxrmfltman.def</ModuleDefinitionFile>
+      <AdditionalDependencies>nudf.lib;FltLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\..\common\inc</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\inc;$(ProjectDir)\..\..\..\nudf\v1\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <AssemblerOutput>All</AssemblerOutput>
+      <PreprocessorDefinitions>_WIN64;_AMD64_;AMD64;NXRMFLTMAN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>mkdir "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetFileName)" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).pdb" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+mkdir "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).lib" "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+mkdir "$(ProjectDir)..\..\lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).lib" "$(ProjectDir)..\..\lib\$(Platform)\$(Configuration)"
+</Command>
+    </PostBuildEvent>
+    <Link>
+      <ModuleDefinitionFile>nxrmfltman.def</ModuleDefinitionFile>
+      <AdditionalDependencies>nudf.lib;FltLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions />
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\..\common\inc</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\inc;$(ProjectDir)\..\..\..\nudf\v1\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <AssemblerOutput>All</AssemblerOutput>
+      <PreprocessorDefinitions>_WIN64;_AMD64_;AMD64;NXRMFLTMAN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>mkdir "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetFileName)" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).pdb" "$(SolutionDir)bin\$(Platform)\$(Configuration)"
+mkdir "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).lib" "$(SolutionDir)lib\$(Platform)\$(Configuration)"
+mkdir "$(ProjectDir)..\..\lib\$(Platform)\$(Configuration)"
+copy /y "$(OutDir)$(TargetName).lib" "$(ProjectDir)..\..\lib\$(Platform)\$(Configuration)"
+</Command>
+    </PostBuildEvent>
+    <Link>
+      <ModuleDefinitionFile>nxrmfltman.def</ModuleDefinitionFile>
+      <AdditionalDependencies>nudf.lib;FltLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\..\common\inc</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
